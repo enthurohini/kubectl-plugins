@@ -1,0 +1,11 @@
+#!/bin/bash
+
+if [ -z $1 ]
+ then
+  echo "please pass pod name"
+  exit 1
+else
+ worker_name=`kubectl get po -o wide $1 | tail +2 | awk '{print $7}'`
+ worker_ip=`kubectl get no kube-worker-6 -o wide | tail +2 | awk '{print $6}'`
+ ssh $worker_ip
+fi

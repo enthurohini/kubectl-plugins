@@ -2,10 +2,10 @@
 
 if [ -z $1 ]
  then
-  echo "please pass pod name"
+  echo "Error: please pass pod name. kubectl pwssh <pod_name>"
   exit 1
 else
  worker_name=`kubectl get po -o wide $1 | tail +2 | awk '{print $7}'`
- worker_ip=`kubectl get no kube-worker-6 -o wide | tail +2 | awk '{print $6}'`
+ worker_ip=`kubectl get no $worker_name -o wide | tail +2 | awk '{print $6}'`
  ssh $worker_ip
 fi

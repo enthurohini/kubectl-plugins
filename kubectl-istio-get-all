@@ -1,0 +1,13 @@
+#!/bin/bash
+
+echo -e  "=============================================\n"
+echo "Gateway:"
+kubectl get gateway
+
+echo -e  "=============================================\n"
+echo "VirtualService"
+kubectl get virtualservice
+
+echo -e  "=============================================\n"
+echo "ServiceEnntry"
+kubectl get serviceentry

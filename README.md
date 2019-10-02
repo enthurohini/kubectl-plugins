@@ -1,35 +1,36 @@
-###Leverage kubectl plugins functionality, add more features to kubectl command.
+## Leverage kubectl plugins functionality to add more features to kubectl command
 
-#Feature 1: 
+### Feature 1: 
 To ssh into the worker where the pod actualy resides.
--> Copy kubectl-pwssh file in your PATH.
--> Make it execuatble : chmod u+x kubectl-pwssh
--> you are done.
+- Copy kubectl-pwssh file in your `PATH`.
+- Make it execuatble : `chmod u+x kubectl-pwssh`
+- you are done.
 
-Command usage:
+**Command usage:**
 
-kubectl pwssh <podname>
+    kubectl pwssh <podname>
 
-#Feature 2: 
+### Feature 2: 
 To sort the kubernetes nodes utilisation by CPU and RAM
--> Copy kubectl-sort-no file in your PATH.
--> Make it execuatble : chmod u+x kubectl-pwssh
--> you are done.
+- Copy kubectl-sort-no file in your `PATH`.
+- Make it execuatble : `chmod u+x kubectl-pwssh`
+- you are done.
 
-Command usage:
+**Command usage:**
 
-kubectl sort no ram
-OR
-kubectl sort no cpu
+    kubectl sort no ram
+    OR
+    kubectl sort no cpu
 
-#Feature 3: 
+### Feature 3: 
 To sort the kubernetes pods utilisation by CPU and RAM
--> Copy kubectl-sort-po file in your PATH.
--> Make it execuatble : chmod u+x kubectl-pwssh
--> you are done.
 
-Command usage:
+- Copy kubectl-sort-po file in your `PATH`.
+- Make it execuatble : `chmod u+x kubectl-pwssh`
+- you are done.
 
-kubectl sort po ram
-OR
-kubectl sort po cpu
+**Command usage:**
+
+    kubectl sort po ram
+    OR
+    kubectl sort po cpu

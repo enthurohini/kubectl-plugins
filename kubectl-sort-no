@@ -1,0 +1,15 @@
+#!/bin/bash
+
+if [ -z $1 ]
+ then
+  echo "Error: please pass sort parameter. kubectl top no cpu|ram"
+  exit 1
+elif [ $1 = "cpu" ]
+  then
+	kubectl top no | sort -nrk3
+
+elif [ $1 = "ram" ]
+  then
+    kubectl top no | sort -nrk5
+
+fi

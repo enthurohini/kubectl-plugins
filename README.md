@@ -34,3 +34,13 @@ To sort the kubernetes pods utilisation by CPU and RAM
     kubectl sort po ram
     OR
     kubectl sort po cpu
+
+### Feature 4:
+Get all istio related resources
+- Copy kubectl-istio-get-all file in your `PATH`.
+- Make it execuatble : `chmod u+x kubectl-istio-get-all`
+- you are done.
+
+**Command usage:**
+
+    kubectl istio get all

@@ -1,6 +1,6 @@
-## Leverage kubectl plugins functionality to add more features to kubectl command
+## Leverage kubectl plugins functionality to add more Plugins to kubectl command
 
-### Feature 1:
+### Plugin 1:
 To ssh into the worker where the pod actualy resides.
 - Copy kubectl-pwssh file in your `PATH`.
 - Make it execuatble : `chmod u+x kubectl-pwssh`
@@ -10,7 +10,7 @@ To ssh into the worker where the pod actualy resides.
 
     kubectl pwssh <podname>
 
-### Feature 2:
+### Plugin 2:
 To sort the kubernetes nodes utilisation by CPU and RAM
 - Copy kubectl-sort-no file in your `PATH`.
 - Make it execuatble : `chmod u+x kubectl-sort-no`
@@ -22,7 +22,7 @@ To sort the kubernetes nodes utilisation by CPU and RAM
     OR
     kubectl sort no cpu
 
-### Feature 3:
+### Plugin 3:
 To sort the kubernetes pods utilisation by CPU and RAM
 
 - Copy kubectl-sort-po file in your `PATH`.
@@ -35,7 +35,7 @@ To sort the kubernetes pods utilisation by CPU and RAM
     OR
     kubectl sort po cpu
 
-### Feature 4:
+### Plugin 4:
 Get all istio related resources
 - Copy kubectl-istio-get-all file in your `PATH`.
 - Make it execuatble : `chmod u+x kubectl-istio-get-all`
